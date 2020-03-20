@@ -23,11 +23,38 @@ package com.leetcode.day4;
 public class Solution {
     public static void main(String[] args) {
 
+        //A-65-90 a-97-122
+
+        String s = "bb";
+        System.out.println(longestPalindrome(s));
     }
 
 
     public static int longestPalindrome(String s) {
+        if (s.length() == 1) {
+            return 1;
+        }
 
-        return 0;
+        char[] ch = new char[128];
+        char[] sCh = s.toCharArray();
+
+        //统计字母出现次数
+        for (int i = 0; i < sCh.length; i++) {
+            ch[sCh[i]]++;
+        }
+
+        int len = 0;
+        for (int i = 0; i < ch.length; i++) {
+            //与1&为1是奇数，0则为偶数
+            //奇数则长度-1，偶数直接累加
+            len += ((ch[i] & 1) == 1 ? ch[i] - 1 : ch[i]);
+
+            //只增加一个奇数
+            if (len % 2 == 0 && ch[i] % 2 == 1 ) {
+                len++;
+            }
+        }
+
+        return len;
     }
 }
