@@ -1,4 +1,4 @@
-package com.leetcode.day2;
+package com.wanghu.day2;
 
 import java.util.*;
 

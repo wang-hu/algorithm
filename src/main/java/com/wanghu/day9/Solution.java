@@ -1,4 +1,4 @@
-package com.leetcode.day9;
+package com.wanghu.day9;
 
 /**
  在 N * N 的网格上，我们放置一些 1 * 1 * 1  的立方体。

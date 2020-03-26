@@ -1,4 +1,4 @@
-package com.leetcode.day2;
+package com.wanghu.day2;
 
 /**
  *找出字符串中出现次数最多的字符，相同字符返回 ASCII 小的字符

@@ -1,4 +1,4 @@
-package com.leetcode.day8;
+package com.wanghu.day8;
 
 /**
  链表的中间结点

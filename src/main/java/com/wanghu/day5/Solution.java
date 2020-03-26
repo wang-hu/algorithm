@@ -1,4 +1,4 @@
-package com.leetcode.day5;
+package com.wanghu.day5;
 
 
 import java.util.Arrays;

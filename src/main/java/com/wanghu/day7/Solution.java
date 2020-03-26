@@ -1,4 +1,4 @@
-package com.leetcode.day7;
+package com.wanghu.day7;
 
 
 /**

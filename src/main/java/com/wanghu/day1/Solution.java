@@ -1,4 +1,4 @@
-package com.leetcode.day1;
+package com.wanghu.day1;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
