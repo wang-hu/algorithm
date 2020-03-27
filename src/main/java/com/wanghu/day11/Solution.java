@@ -17,21 +17,17 @@ public class Solution {
 
     public static int[] plusOne(int[] digits) {
 
-        int[] reverses = new int[digits.length +  1];
-        for (int i = 0; i < digits.length; i++) {
-            reverses[digits.length - i - 1] = digits[i];
-        }
-
-        for (int i = 0; i < reverses.length; i++) {
-            if ((reverses[i] + 1) < 10) {
-
+        for (int i = digits.length - 1; i >= 0; i--) {
+            digits[i]++;
+            if (digits[i] % 10 !=0) {
+                return digits;
             }
         }
 
+        digits = new int[digits.length + 1];
+        digits[0] = 1;
 
-
-
-        return reverses;
+        return digits;
 
 
     }
