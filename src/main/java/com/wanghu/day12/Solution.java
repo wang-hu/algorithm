@@ -38,9 +38,12 @@ public class Solution {
     }
 
     public static int minimumLengthEncoding(String[] words) {
+        //装入无序不重复集合中
         Set<String> good = new HashSet(Arrays.asList(words));
         for (String word: words) {
-            for (int k = 1; k < word.length(); ++k)
+            //从1开始是因为word已经在集合中存在
+            for (int k = 1; k < word.length(); k++)
+                //依次删除已经在集合中存在的元素
                 good.remove(word.substring(k));
         }
 
